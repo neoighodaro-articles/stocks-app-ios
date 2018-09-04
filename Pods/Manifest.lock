@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.7.3)
+  - CryptoSwift (0.9.0)
+  - MarqueeLabel/Swift (3.1.6)
+  - NotificationBannerSwift (1.6.3):
+    - MarqueeLabel/Swift
+    - SnapKit (~> 4.0)
+  - PusherSwift (6.1.0):
+    - CryptoSwift (~> 0.9.0)
+    - ReachabilitySwift (~> 4.1.0)
+    - Starscream (~> 3.0.5)
+    - TaskQueue (~> 1.1.1)
+  - PushNotifications (1.0.1)
+  - ReachabilitySwift (4.1.0)
+  - SnapKit (4.0.0)
+  - Starscream (3.0.5)
+  - TaskQueue (1.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7.3)
+  - NotificationBannerSwift (~> 1.6.3)
+  - PusherSwift (~> 6.1.0)
+  - PushNotifications (~> 1.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CryptoSwift
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - PusherSwift
+    - PushNotifications
+    - ReachabilitySwift
+    - SnapKit
+    - Starscream
+    - TaskQueue
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  CryptoSwift: bca8c5b653dcc2d9734409242a070ff53bafac86
+  MarqueeLabel: 0c41f08ef5773e29c0f71064a8fa788a2fd8b365
+  NotificationBannerSwift: b231e4c3244848ef300e1c53ce027b9756b9b06f
+  PusherSwift: 6f2535d616cf0d6867a58bee501999995ad37999
+  PushNotifications: ad6058f44748ca9cb2a571fb6c2d9a9bf43e7ca4
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
+  TaskQueue: 53a3cdaf817d9ce3cd50837ff6610aeb7b968997
+
+PODFILE CHECKSUM: 94f68c6b602f4702bc5a1999b9a8a3ec531000d6
+
+COCOAPODS: 1.5.3

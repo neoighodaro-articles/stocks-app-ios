@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="stock" id="INh-QV-hHy" customClass="StockCell" customModule="Stocks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="INh-QV-hHy" id="rGf-6L-ozC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stock" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLe-iO-84A">
+                        <rect key="frame" x="16" y="11" width="48" height="22"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZw-Vo-gqa">
+                        <rect key="frame" x="266" y="11" width="93" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tl-3Z-Z0U">
+                                <rect key="frame" x="10" y="3" width="73" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.23137254900000001" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="250" constant="100" id="CMZ-2i-PKc"/>
+                            <constraint firstItem="6tl-3Z-Z0U" firstAttribute="centerY" secondItem="eZw-Vo-gqa" secondAttribute="centerY" id="ViG-0S-fJM"/>
+                            <constraint firstItem="6tl-3Z-Z0U" firstAttribute="leading" secondItem="eZw-Vo-gqa" secondAttribute="leading" constant="10" id="atb-hW-Qh5"/>
+                            <constraint firstAttribute="trailing" secondItem="6tl-3Z-Z0U" secondAttribute="trailing" constant="10" id="tGX-cR-JRo"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="vkH-va-sdI"/>
+                            <constraint firstItem="6tl-3Z-Z0U" firstAttribute="centerX" secondItem="eZw-Vo-gqa" secondAttribute="centerX" id="wCg-4t-Rgu"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9P-wM-u8h">
+                        <rect key="frame" x="223.5" y="11" width="34.5" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="MLe-iO-84A" firstAttribute="top" secondItem="rGf-6L-ozC" secondAttribute="topMargin" id="SXf-lv-6vw"/>
+                    <constraint firstItem="eZw-Vo-gqa" firstAttribute="top" secondItem="rGf-6L-ozC" secondAttribute="topMargin" id="Upo-KF-Nu1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="z9P-wM-u8h" secondAttribute="bottom" id="c5F-39-71T"/>
+                    <constraint firstItem="eZw-Vo-gqa" firstAttribute="bottom" secondItem="rGf-6L-ozC" secondAttribute="bottomMargin" id="fNf-HD-hOQ"/>
+                    <constraint firstItem="z9P-wM-u8h" firstAttribute="top" secondItem="rGf-6L-ozC" secondAttribute="topMargin" id="gLE-yq-tzV"/>
+                    <constraint firstItem="eZw-Vo-gqa" firstAttribute="trailing" secondItem="rGf-6L-ozC" secondAttribute="trailingMargin" id="ghG-yF-Ja5"/>
+                    <constraint firstItem="MLe-iO-84A" firstAttribute="bottom" secondItem="rGf-6L-ozC" secondAttribute="bottomMargin" id="qRu-3O-622"/>
+                    <constraint firstItem="z9P-wM-u8h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="MLe-iO-84A" secondAttribute="trailing" id="uW5-d7-577"/>
+                    <constraint firstItem="MLe-iO-84A" firstAttribute="leading" secondItem="rGf-6L-ozC" secondAttribute="leadingMargin" id="ucq-Zp-tm2"/>
+                    <constraint firstItem="eZw-Vo-gqa" firstAttribute="leading" secondItem="z9P-wM-u8h" secondAttribute="trailing" constant="8" id="yOX-Xv-cAF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="percentageWrapper" destination="eZw-Vo-gqa" id="0pg-wd-hYh"/>
+                <outlet property="stockName" destination="MLe-iO-84A" id="HjG-Qz-mCL"/>
+                <outlet property="stockPercentageChange" destination="6tl-3Z-Z0U" id="3Yy-IR-xDa"/>
+                <outlet property="stockPrice" destination="z9P-wM-u8h" id="tGw-Dp-IZ6"/>
+            </connections>
+            <point key="canvasLocation" x="48.5" y="62"/>
+        </tableViewCell>
+    </objects>
+</document>
